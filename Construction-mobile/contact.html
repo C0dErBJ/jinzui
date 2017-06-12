@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection"/>
+    <title>上海金最建设发展有限公司</title>
+    <meta name="keywords" content="金最建设"/>
+    <meta name="description"
+          content="上海金最建设发展有限公司是一家以机电设备安装维修为主，以建筑装饰、装修、维修为一体的一级建筑施工单位，主要从事建筑工程，包括机电设备安装维修，消防安装维修，强弱电监控，电梯，冷冻空调工程，配电间值班服务，压力管道，建筑装修装饰，地坪油漆，钢结构，市政排污，防腐，水暖，行车，环保工程，金属材料，五金交电，建材销售等"/>
+    <meta name="Author" content="纵合技术">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery/dist/jquery.min.js"></script>
+    <!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+
+<body>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<header><h1>上海金最建设发展有限公司</h1>
+    <div class="button cin_navig"><img src="images/home1.png"/></div>
+    <div class="cin_navigation" style="height:0;">
+        <ul class="con_nev">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="about.html">公司简介</a></li>
+            <li><a href="cases.html">案例展示</a></li>
+            <li><a href="products.html">服务内容</a></li>
+            <!--        <li><a href="news.asp">最新资讯</a></li>
+                  <li><a href="baojia.asp">最新报价</a></li>
+                    <li><a href="cases.asp">设备展示</a></li>-->
+            <!--<li><a href="online.asp">在线留言</a></li>-->
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <script>
+        $(function () {
+            $('.cin_navig').click(
+                function (e) {
+                    e.stopPropagation();
+                    if ($(".cin_navigation").height() <= 0) {
+                        $(".cin_navigation").animate({height: "380px"}, 450);
+                    } else {
+                        $(".cin_navigation").animate({height: "0px"}, 300);
+                    }
+                }
+            );
+            $('body').on("click", function (e) {
+                e.stopPropagation();
+                if ($(".cin_navigation").height() > 0) {
+                    $(".cin_navigation").animate({height: "0px"}, 450);
+                }
+            });
+        })
+    </script>
+
+</header>
+<script src="js/zzsc.js"></script>
+<a href="#" class="cd-top">Top</a>
+<div class="main">
+    <div class="pageTitle">联系我们</div>
+    <article>
+        <p>
+            <strong><span style="line-height:2;">上海金最建设发展有限公司</span></strong>
+        </p>
+        <p>
+            <span style="line-height:2;">电话： 021-52751607</span>
+        </p>
+        <p>
+            <span style="line-height:2;">传真：021-52751607</span>
+        </p>
+        <p>
+            <span style="line-height:2;">手机：13701773482，13817475271</span>
+        </p>
+        <p>
+            <span style="line-height:2;">联系人：陈先生</span>
+        </p>
+        <p>
+            <span style="line-height:2;">地址：上海市宝山区长江西路999号</span>
+        </p>
+        <p>
+            <span style="line-height:2;">网址：www.jinzuijz.com</span>
+        </p><br>
+        <div id="map">
+            <div id="dituContent"></div>
+        </div>
+        <style type="text/css">
+            #map {
+                float: left;
+                width: 100%;
+                height: 200px;
+                border: #ccc solid 1px;
+                margin-top: 10px;
+            }
+
+            #dituContent {
+                width: 100%;
+                height: 200px;
+            }
+
+            .iw_poi_title {
+                color: #CC5522;
+                font-size: 14px;
+                font-weight: bold;
+                overflow: hidden;
+                padding-right: 13px;
+                white-space: nowrap;
+            }
+
+            .iw_poi_content {
+                font: 12px arial, sans-serif;
+                overflow: visible;
+                padding: 4px;
+                white-space: -moz-pre-wrap;
+                word-wrap: break-word;
+            }
+        </style>
+    </article>
+</div>
+<div class="botm">
+    <div class="bottom">
+        <ul>
+            <li><a href="index.html"><img src="images/Home.png"><span>网站首页</span></a></li>
+            <li><a href="tel:13701773482"><img src="images/tex.png"><span>一键拨号</span></a></li>
+            <li><a href="contact.html"><img src="images/location.png"><span>联系我们</span></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap() {
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap() {
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(121.468766, 31.34607);//定义一个中心点坐标
+        map.centerAndZoom(point, 17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent() {
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl() {
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor: BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{
+        title: "上海金最建设发展有限公司",
+        content: "电话:021-52751607",
+        point: "121.468766|31.34607",
+        isOpen: 1,
+        icon: {w: 23, h: 25, l: 46, t: 21, x: 9, lb: 12}
+    }
+    ];
+    //创建marker
+    function addMarker() {
+        for (var i = 0; i < markerArr.length; i++) {
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0, p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point, {icon: iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title, {"offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor: "#808080",
+                color: "#333",
+                cursor: "pointer"
+            });
+
+            (function () {
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click", function () {
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open", function () {
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close", function () {
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click", function () {
+                    _marker.openInfoWindow(_iw);
+                })
+                if (!!json.isOpen) {
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i) {
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>" + "<div class='iw_poi_content'>地址:上海市宝山区长江西路999号</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json) {
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w, json.h), {
+            imageOffset: new BMap.Size(-json.l, -json.t),
+            infoWindowOffset: new BMap.Size(json.lb + 5, 1),
+            offset: new BMap.Size(json.x, json.h)
+        })
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
+</html>

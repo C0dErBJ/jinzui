@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection"/>
+    <title>上海金最建设发展有限公司</title>
+    <meta name="keywords" content="金最建设"/>
+    <meta name="description"
+          content="上海金最建设发展有限公司是一家以机电设备安装维修为主，以建筑装饰、装修、维修为一体的一级建筑施工单位，主要从事建筑工程，包括机电设备安装维修，消防安装维修，强弱电监控，电梯，冷冻空调工程，配电间值班服务，压力管道，建筑装修装饰，地坪油漆，钢结构，市政排污，防腐，水暖，行车，环保工程，金属材料，五金交电，建材销售等"/>
+    <meta name="Author" content="纵合技术">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<header><h1>上海金最建设发展有限公司</h1>
+    <!--<div class="logo"><a href="javascript:history.go(-1);"><img src="images/return.png"></a></div>-->
+    <div class="button cin_navig"><img src="images/home1.png"/></div>
+    <div class="cin_navigation" style="height:0;">
+        <ul class="con_nev">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="about.html">公司简介</a></li>
+            <li><a href="cases.html">案例展示</a></li>
+            <li><a href="products.html">服务内容</a></li>
+            <!--        <li><a href="news.asp">最新资讯</a></li>
+                  <li><a href="baojia.asp">最新报价</a></li>
+                    <li><a href="cases.asp">设备展示</a></li>-->
+            <!--<li><a href="online.asp">在线留言</a></li>-->
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <script>
+        $(function () {
+            $('.cin_navig').click(
+                function (e) {
+                    e.stopPropagation();
+                    if ($(".cin_navigation").height() <= 0) {
+                        $(".cin_navigation").animate({height: "380px"}, 450);
+                    } else {
+                        $(".cin_navigation").animate({height: "0px"}, 300);
+                    }
+                }
+            );
+            $('body').on("click", function (e) {
+                e.stopPropagation();
+                if ($(".cin_navigation").height() > 0) {
+                    $(".cin_navigation").animate({height: "0px"}, 450);
+                }
+            });
+        })
+    </script>
+
+</header>
+<script src="js/zzsc.js"></script>
+<a href="#" class="cd-top">Top</a>
+<div class="main">
+    <div class="pageTitle">服务内容</div>
+    <div class="proName">水暖</div>
+    <div class="proImg"><img src="images/product_6.jpg"></div>
+    <article>
+        <p>
+            <span style="line-height:2;">水暖是地板辐射采暖的其中一种，也是目前最流行的一种采暖方式，它比起电暖还是相当有优势的。水暖是通过地面盘管，管道里有循环流动的热水，通过地板辐射层中的热媒，均匀加热整个地面，利用地面自身的蓄热和热量向上辐射的规律由下至上进行传导，来达到取暖的目的。由于在室内形成脚底至头部逐渐递减的温度梯度，从而给人以脚暖头凉的舒适感。地面辐射供暖符合中医“温足而顶凉”的健身理论，是目前最舒适的采暖方式，也是现代生活品质的象征。
+				  我公司为您提供水暖工程安装、维修服务工作。</span>
+        </p><br>
+    </article>
+</div>
+<div class="next">
+    <h1>上一条:<span>
+    <a href="products_detail_5.html">机电设备安装维修</a>
+    </span>
+    </h1>
+    <h2>下一条:
+
+        <a href="products_detail_7.html">冷冻空调工程</a>
+
+    </h2>
+    <div class="clear"></div>
+</div>
+
+<div class="botm">
+    <div class="bottom">
+        <ul>
+            <li><a href="index.html"><img src="images/Home.png"><span>网站首页</span></a></li>
+            <li><a href="tel:13701773482"><img src="images/tex.png"><span>一键拨号</span></a></li>
+            <li><a href="contact.html"><img src="images/location.png"><span>联系我们</span></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

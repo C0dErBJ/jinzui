@@ -1,0 +1,17 @@
+.diy_page,.diy_page2{font:12px/22px Arial;clear:both;margin:0 auto;text-align:center;color:#999;}
+
+.diy_page a img{border:0;}
+.diy_page a{text-decoration:none;color:#555;border:1px solid #bbb; padding:3px 6px;margin-right:1px;font:normal 12px/1.5em simsun,Verdana,Lucida, Arial;}
+.diy_page a:hover{color:#F60;text-decoration:none;border:1px solid #ff4800;}
+.diy_page a.current{color:#F60;border:1px solid #F60;}
+.diy_page a.p_n{border:none;}
+.diy_page a.p_n:hover{border:none;background:none;color:#333;text-decoration:underline;}
+.diy_page a.nob{border:none;padding:0 3px}
+.diy_page a.p_n2{border:none;text-decoration:none;border:1px solid #FFF;}
+.diy_page a.p_n2:hover{border:none;background:none;border:1px solid #F60;}
+
+.diy_page2 a img{border:0;}
+.diy_page2 a{text-decoration:underline;color:#333; padding:0 4px;border:1px solid #FFF;}
+.diy_page2 a:hover{color:#f00;border:1px solid #F60;text-decoration:none;}
+.diy_page2 a.p_n{text-decoration:none;} 
+.diy_page2 span{color:red;padding:0 5px;margin-right:1px;}

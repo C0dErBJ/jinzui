@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection"/>
+    <title>上海金最建设发展有限公司</title>
+    <meta name="keywords" content="金最建设"/>
+    <meta name="description"
+          content="上海金最建设发展有限公司是一家以机电设备安装维修为主，以建筑装饰、装修、维修为一体的一级建筑施工单位，主要从事建筑工程，包括机电设备安装维修，消防安装维修，强弱电监控，电梯，冷冻空调工程，配电间值班服务，压力管道，建筑装修装饰，地坪油漆，钢结构，市政排污，防腐，水暖，行车，环保工程，金属材料，五金交电，建材销售等"/>
+    <meta name="Author" content="纵合技术">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<header><h1>上海金最建设发展有限公司</h1>
+    <!--<div class="logo"><a href="javascript:history.go(-1);"><img src="images/return.png"></a></div>-->
+    <div class="button cin_navig"><img src="images/home1.png"/></div>
+    <div class="cin_navigation" style="height:0;">
+        <ul class="con_nev">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="about.html">公司简介</a></li>
+            <li><a href="cases.html">案例展示</a></li>
+            <li><a href="products.html">服务内容</a></li>
+            <!--        <li><a href="news.asp">最新资讯</a></li>
+                  <li><a href="baojia.asp">最新报价</a></li>
+                    <li><a href="cases.asp">设备展示</a></li>-->
+            <!--<li><a href="online.asp">在线留言</a></li>-->
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <script>
+        $(function () {
+            $('.cin_navig').click(
+                function (e) {
+                    e.stopPropagation();
+                    if ($(".cin_navigation").height() <= 0) {
+                        $(".cin_navigation").animate({height: "380px"}, 450);
+                    } else {
+                        $(".cin_navigation").animate({height: "0px"}, 300);
+                    }
+                }
+            );
+            $('body').on("click", function (e) {
+                e.stopPropagation();
+                if ($(".cin_navigation").height() > 0) {
+                    $(".cin_navigation").animate({height: "0px"}, 450);
+                }
+            });
+        })
+    </script>
+
+</header>
+<script src="js/zzsc.js"></script>
+<a href="#" class="cd-top">Top</a>
+<div class="main">
+    <div class="pageTitle">服务内容</div>
+    <div class="proName">市政排污</div>
+    <div class="proImg"><img src="images/product_17.jpg"></div>
+    <article>
+        <p>
+            <span style="line-height:2;">污水包括家庭污水（粪便污水、杂用污水）、公共污水（公共建筑场所污水）、医院污水（经过消毒等预处理）、工业污水（经过必要的预处理，如中和、除重金属等）、初雨径流。
+				  我公司提供上述污水的处理服务工作。</span>
+        </p><br>
+    </article>
+</div>
+<div class="next">
+    <h1>上一条:<span>
+    <a href="products_detail_16.html">配电间值班服务</a>
+    </span>
+    </h1>
+    <h2>下一条:
+
+        <a href="products_detail_18.html">行车</a>
+
+    </h2>
+    <div class="clear"></div>
+</div>
+
+<div class="botm">
+    <div class="bottom">
+        <ul>
+            <li><a href="index.html"><img src="images/Home.png"><span>网站首页</span></a></li>
+            <li><a href="tel:13701773482"><img src="images/tex.png"><span>一键拨号</span></a></li>
+            <li><a href="contact.html"><img src="images/location.png"><span>联系我们</span></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
