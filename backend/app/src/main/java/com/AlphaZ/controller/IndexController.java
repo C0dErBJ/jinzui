@@ -34,7 +34,7 @@ public class IndexController {
     public static String receiveMailAccount = "1251418535@qq.com";
 
     @RequestMapping(value = {"mail", ""}, method = RequestMethod.GET)
-    public void index( contact contact) throws Exception {
+    public String index( contact contact) throws Exception {
       //  contact contact = new ObjectMapper().readValue(callbackparam.getAttribute("callbackparam").toString(), com.AlphaZ.controller.contact.class);
         // 1. 创建参数配置, 用于连接邮件服务器的参数配置
         Properties props = new Properties();                    // 参数配置
@@ -59,7 +59,9 @@ public class IndexController {
         // 2. 根据配置创建会话对象, 用于和邮件服务器交互
         Session session = Session.getDefaultInstance(props);
         session.setDebug(true);                                 // 设置为debug模式, 可以查看详细的发送 log
-
+if(contact==null||contact.phone==null||"".equals(contact.phone)){
+    return "请输入手机";
+}
 
         // 3. 创建一封邮件
         MimeMessage message = createMimeMessage(session, myEmailAccount, receiveMailAccount, contact.toString());
@@ -88,6 +90,7 @@ public class IndexController {
 
         // 7. 关闭连接
         transport.close();
+return "提交成功";
     }
 
 

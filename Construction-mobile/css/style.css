@@ -371,7 +371,16 @@ article a {
     margin-bottom: 18px;
     font-weight: bold;
 }
-
+.typeTitle {
+    line-height: 7vmin;
+    text-align: left;
+    margin-left: 16px;
+    color: #ffab44;
+    font-size: 3vw;
+    margin-bottom: 18px;
+    font-weight: bold;
+    display: block;
+}
 
 /**首页关于**/
 

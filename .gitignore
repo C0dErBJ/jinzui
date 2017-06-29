@@ -90,3 +90,4 @@ hs_err_pid*
 /Construction/.vscode/
 /jinzui.iml
 !/backend/app/libs/javax.mail.jar
+.DS_Store
